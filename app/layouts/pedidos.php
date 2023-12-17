@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>One Pizza</title>
 
-	<link rel="stylesheet" href="css/pedidos.css">
+	<link rel="stylesheet" href="../../public/assets/css/pedidos.css">
 
 	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 	<link rel="shortcut icon" href="midia/20.png" type="image/x-icon">
@@ -15,7 +15,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap"
 		rel="stylesheet">
-	<script src="js/pedidos.js"></script>
+	<script src="../../public/assets/js/pedidos.js"></script>
 
 </head>
 
@@ -23,7 +23,7 @@
 
 	<!-- header section -->
 	<header class="cabecalho">
-		<a href="#" class="logo"><img src="midia/logo.png" alt="logo"></a>
+		<a href="#" class="logo"><img src="../../public/assets/img/logo.png" alt="logo"></a>
 
 		<div class="h-icons">
 			<a href="login.html"><i class='bx bx-circle'></i></a>
@@ -46,7 +46,7 @@
 		</div>
 
 		<div class="home-img">
-			<img src="midia/montesuapizza.png" alt="home">
+			<img src="../../public/assets/img/montesuapizza.png" alt="home">
 		</div>
 	</section>
 
@@ -59,116 +59,86 @@
 		<form id="form" method="POST" action="">
 			<div class="container-box">
 				<div class="c-mainbox">
-				  <input type="radio" name="size" id="peq">
-				  <label for="peq" class="lbl lbl1"><span>Pequena <br> 4</span></label>
+					<input type="radio" name="size" id="peq">
+					<label for="peq" class="lbl lbl1"><span>Pequena <br> 4</span></label>
 				</div>
-			  
-				<div class="c-mainbox">
-				  <input type="radio" name="size" id="med">
-				  <label for="med" class="lbl lbl2"><span>Média 6</span></label>
-				</div>
-			  
-				<div class="c-mainbox">
-				  <input type="radio" name="size" id="gran">
-				  <label for="gran" class="lbl lbl3"><span>Grande <br> 8</span></label>
-				</div>
-			  
-				<div class="c-mainbox">
-				  <input type="radio" name="size" id="fam">
-				  <label for="fam" class="lbl lbl4"><span>Família <br> 12</span></label>
-				</div>
-			  </div>
 
-			  <div class="main-text text2">
+				<div class="c-mainbox">
+					<input type="radio" name="size" id="med">
+					<label for="med" class="lbl lbl2"><span>Média 6</span></label>
+				</div>
+
+				<div class="c-mainbox">
+					<input type="radio" name="size" id="gran">
+					<label for="gran" class="lbl lbl3"><span>Grande <br> 8</span></label>
+				</div>
+
+				<div class="c-mainbox">
+					<input type="radio" name="size" id="fam">
+					<label for="fam" class="lbl lbl4"><span>Família <br> 12</span></label>
+				</div>
+			</div>
+
+			<div class="main-text text2">
 				<h2>Escolha a <span>quantidade de sabores</span> deliciosos</h2>
 				<img src="" alt="">
 				<p>Temos tamanhos variados para atender ao tamanho da sua fome em todos os momentos.</p>
 			</div>
 
-			  <div class="container-box second">
-				<div class="c-mainbox">
-				  <input type="radio" name="size" id="peq">
-				  <label for="peq" class="lbll lbl5"><span>1 Sabor</span></label>
-				</div>
-			  
-				<div class="c-mainbox">
-				  <input type="radio" name="size" id="med">
-				  <label for="med" class="lbll lbl6"><span>2 Sabores</span></label>
-				</div>
-			  
-				<div class="c-mainbox">
-				  <input type="radio" name="size" id="gran">
-				  <label for="gran" class="lbll lbl7"><span>3 Sabores</span></label>
-				</div>
-			  
-				<div class="c-mainbox">
-				  <input type="radio" name="size" id="fam">
-				  <label for="fam" class="lbll lbl8"><span>4 Sabores</span></label>
-				</div>
-			  </div>
-			<!-- <div class="container-box">
-				<div class="c-mainbox">
-					<a href="#">
-						<div class="circle peq">4</div>
-					</a>
-					<p>Pequena (Máx. 1 sabor)</p>
+			<div class="container-box second">
+				<div class="c-mainbox" onclick="Select(1)">
+					<input type="radio" name="qtdsab" id="peq" class="1">
+					<label for="peq" class="lbll lbl5"><span>1 Sabor</span></label>
 				</div>
 
-				<div class="c-mainbox">
-					<a href="#">
-						<div class="circle med">6</div>
-					</a>
-					<p>Média (Máx. 2 sabores)</p>
+				<div class="c-mainbox" onclick="Select(2)">
+					<input type="radio" name="qtdsab" id="med" class="2">
+					<label for="med" class="lbll lbl6"><span>2 Sabores</span></label>
 				</div>
 
-				<div class="c-mainbox">
-					<a href="#">
-						<div class="circle gran">8</div>
-					</a>
-					<p>Grande (Máx. 2 sabores)</p>
+				<div class="c-mainbox" onclick="Select(3)">
+					<input type="radio" name="qtdsab" id="gran" class="3">
+					<label for="gran" class="lbll lbl7"><span>3 Sabores</span></label>
 				</div>
 
-				<div class="c-mainbox">
-					<a href="#">
-						<div class="circle fam">12</div>
-					</a>
-					<p>Família (Máx. 4 sabores)</p>
+				<div class="c-mainbox" onclick="Select(4)">
+					<input type="radio" name="qtdsab" id="fam" class="4">
+					<label for="fam" class="lbll lbl8"><span>4 Sabores</span></label>
 				</div>
-			</div> -->
-
+			</div>
 	</section>
 	<section class="about insp" id="about">
 		<div class="about-img">
-			<div class="sabor sabor1"><img id="sab1" src="midia/pizza vegetariana 1-4.png" alt=""></div>
-			<div class="sabor sabor2"><img id="sab2" src="midia/pizza calabresa 4-4.png" alt=""></div>
-			<div class="sabor sabor3"><img src="midia/pizza queijo 2-4.png" alt=""></div>
-			<div class="sabor sabor4"><img src="midia/pizza vegetariana 3-4.png" alt=""></div>
+			<div class="sabor sabor1"><img id="sab1" src="../../public/assets/img/pizza vegetariana 1-4.png" alt=""></div>
+			<div class="sabor sabor2"><img id="sab2" src="../../public/assets/img/pizza calabresa 4-4.png" alt=""></div>
+			<div class="sabor sabor3"><img id="sab3" src="../../public/assets/img/pizza queijo 2-4.png" alt=""></div>
+			<div class="sabor sabor4"><img id="sab4" src="../../public/assets/img/pizza vegetariana 3-4.png" alt=""></div>
 		</div>
 
 		<div class="about-text">
 			<h2>Escolha o <span> melhor sabor </span>para você:</span></h2>
-			<select class="sabores">
+			<select class="sabores hidden" id="sabor1" onchange="atualizarImagem('sabor1')">
 				<option val="">Sabor 1</option>
 				<option val="1">Margue Rita No Mi</option>
 				<option val="2">Chee Se No Mi</option>
 				<option val="3">Veg Veg no Mi</option>
 				<option val="4">Pe Pero no Mi</option>
 			</select>
-			<select class="sabores">
+			<select class="sabores hidden" id="sabor2" onchange="atualizarImagem('sabor2')">
 				<option val="">Sabor 2</option>
 				<option val="1">Margue Rita No Mi</option>
 				<option val="2">Chee Se No Mi</option>
 				<option val="3">Veg Veg no Mi</option>
 				<option val="4">Pe Pero no Mi</option>
 			</select>
-			<select class="sabores">
+			<select class="sabores hidden" id="sabor3" onchange="atualizarImagem('sabor3')">
 				<option val="">Sabor 3</option>
 				<option val="1">Margue Rita No Mi</option>
 				<option val="2">Chee Se No Mi</option>
 				<option val="3">Veg Veg no Mi</option>
 				<option val="4">Pe Pero no Mi</option>
 			</select>
-			<select class="sabores">
+			<select class="sabores hidden" id="sabor4" onchange="atualizarImagem('sabor4')">
 				<option val="">Sabor 4</option>
 				<option val="1">Margue Rita No Mi</option>
 				<option val="2">Chee Se No Mi</option>
@@ -198,7 +168,7 @@
 
 		<div class="menu-content">
 			<div class="row">
-				<img src="midia/drink-2.jpg" alt="main-product2">
+				<img src="../../public/assets/img/drink-2.jpg" alt="main-product2">
 				<div class="menu-text">
 					<div class="menu-left">
 						<h4>Chá Gelado do <br> Zoro</h4>
@@ -215,7 +185,7 @@
 			</div>
 
 			<div class="row">
-				<img src="midia/drink-1.jpg" alt="main-product2">
+				<img src="../../public/assets/img/drink-1.jpg" alt="main-product2">
 				<div class="menu-text">
 					<div class="menu-left">
 						<h4>Água com Gás do Luffy</h4>
@@ -232,7 +202,7 @@
 			</div>
 
 			<div class="row">
-				<img src="midia/drink-3.jpg" alt="main-product3">
+				<img src="../../public/assets/img/drink-3.jpg" alt="main-product3">
 				<div class="menu-text">
 					<div class="menu-left">
 						<h4>Água com Gás da Nami</h4>
@@ -249,7 +219,7 @@
 			</div>
 
 			<div class="row">
-				<img src="midia/drink-4.jpg" alt="main-product4">
+				<img src="../../public/assets/img/drink-4.jpg" alt="main-product4">
 				<div class="menu-text">
 					<div class="menu-left">
 						<h4>Fanta Laranja do Luffy</h4>
@@ -320,7 +290,7 @@
 	<script src="https://unpkg.com/scrollreveal"></script>
 
 	<!-- custom js link -->
-	<script type="text/javascript" src="js/home.js"></script>
+	<script type="text/javascript" src="../../public/assets/js/home.js"></script>
 
 </body>
 

@@ -1,0 +1,15 @@
+{
+    "name": "onepizza/onepizza",
+    "description": "Projeto Pizzaria",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+           
+            "app\\controllers\\": "app/controllers/"
+
+        }
+    },
+    "require": {
+        "nikic/fast-route": "^1.3"
+    }
+}
