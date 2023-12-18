@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>One Pizza</title>
 
-	<link rel="stylesheet" href="css/home.css">
+	<link rel="stylesheet" href="../../public/assets/css/home.css">
 
 	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 	<link rel="shortcut icon" href="midia/20.png" type="image/x-icon">
@@ -19,7 +19,7 @@
 
 	<!-- header section -->
 	<header class="cabecalho">
-		<a href="#" class="logo"><img src="midia/logo.png" alt="logo"></a>
+		<a href="#" class="logo"><img src="../../public/assets/img/logo.png" alt="logo"></a>
 		<ul class="navbar">
 			<li><a href="#home">Home</a></li>
 			<li><a href="#about">Sobre Nós</a></li>
@@ -29,7 +29,7 @@
 
 		<div class="h-icons">
 			<a href="login.html"><i class='bx bx-log-in' ></i></a>
-			<a href="#"><i class='bx bx-cart' ></i></a>
+			<a href="/carrinho/1"><i class='bx bx-cart' ></i></a>
 		</div>
 
 	</header>
@@ -44,13 +44,13 @@
 			</div>
 
 			<div class="home-img">
-				<img src="midia/peperonomi.png" alt="home">
+				<img src="../../public/assets/img/peperonomi.png" alt="home">
 			</div>
 		</section>
 
 		<section class="about insp" id="about">
 			<div class="about-img">
-				<img src="midia/gif.gif" id="luffyakm" alt="">
+				<img src="../../public/assets/img/gif.gif" id="luffyakm" alt="">
 			</div>
 
 			<div class="about-text">
@@ -71,7 +71,7 @@
 			<div class="container-box">
 				<div class="c-mainbox">
 					<div class="container-img">
-						<img src="midia/b1.png" alt="box1">
+						<img src="../../public/assets/img/b1.png" alt="box1">
 					</div>
 					<div class="container-text">
 						<p>Massa de Fermentação Natural</p>
@@ -80,7 +80,7 @@
 
 				<div class="c-mainbox">
 					<div class="container-img">
-						<img src="midia/b2.png" alt="box2">
+						<img src="../../public/assets/img/b2.png" alt="box2">
 					</div>
 					<div class="container-text">
 						<p>Tomates Frescos</p>
@@ -89,7 +89,7 @@
 
 				<div class="c-mainbox">
 					<div class="container-img">
-						<img src="midia/b3.png" alt="box3">
+						<img src="../../public/assets/img/b3.png" alt="box3">
 					</div>
 					<div class="container-text">
 						<p>Queijo Mussarela</p>
@@ -98,7 +98,7 @@
 
 				<div class="c-mainbox">
 					<div class="container-img">
-						<img src="midia/b4.png" alt="box4">
+						<img src="../../public/assets/img/b4.png" alt="box4">
 					</div>
 					<div class="container-text">
 						<p>Peperoni Italiano</p>
@@ -106,7 +106,7 @@
 				</div>
 				<div class="c-mainbox">
 					
-						<img src="midia/b5.png" id="manjericao" alt="box5">
+						<img src="../../public/assets/img/b5.png" id="manjericao" alt="box5">
 				
 					<div class="container-text">
 						<p>Manjericão da nossa horta</p>
@@ -114,7 +114,7 @@
 				</div>
 				<div class="c-mainbox">
 					
-						<img src="midia/b6.png" id="azeitona" alt="box6">
+						<img src="../../public/assets/img/b6.png" id="azeitona" alt="box6">
 					
 					<div class="container-text">
 						<p>Azeitonas fresquinhas</p>
@@ -127,7 +127,7 @@
 	<!-- about section -->
 		<section class="about" id="about">
 			<div class="about-img">
-				<img src="midia/sanji.png" alt="">
+				<img src="../../public/assets/img/sanji.png" alt="">
 			</div>
 
 			<div class="about-text">
@@ -148,7 +148,7 @@
 
 			<div class="menu-content">
 				<div class="row">
-					<img src="midia/marguerita.jpg" alt="main-product1">
+					<img src="../../public/assets/img/marguerita.jpg" alt="main-product1">
 					<div class="menu-text">
 						<div class="menu-left">
 							<h4>Margue Rita No Mi</h4>
@@ -168,7 +168,7 @@
 				</div>
 
 				<div class="row">
-					<img src="midia/queijo.jpg" alt="main-product2">
+					<img src="../../public/assets/img/queijo.jpg" alt="main-product2">
 					<div class="menu-text">
 						<div class="menu-left">
 							<h4>Chee see No Mi</h4>
@@ -188,7 +188,7 @@
 				</div>
 
 				<div class="row">
-					<img src="midia/vegetariana.jpg" alt="main-product3">
+					<img src="../../public/assets/img/vegetariana.jpg" alt="main-product3">
 					<div class="menu-text">
 						<div class="menu-left">
 							<h4>Veg Veg No Mi</h4>
@@ -208,7 +208,7 @@
 				</div>
 
 				<div class="row">
-					<img src="midia/calabresa.jpg" alt="main-product4">
+					<img src="../../public/assets/img/calabresa.jpg" alt="main-product4">
 					<div class="menu-text">
 						<div class="menu-left">
 							<h4>Pe Pero No Mi</h4>
@@ -238,7 +238,7 @@
 	
 			<div class="menu-content">
 				<div class="row">
-					<img src="midia/drink-2.jpg" alt="main-product2">
+					<img src="../../public/assets/img/drink-2.jpg" alt="main-product2">
 					<div class="menu-text">
 						<div class="menu-left">
 							<h4>Chá Gelado do <br> Zoro</h4>
@@ -251,7 +251,7 @@
 				</div>
 	
 				<div class="row">
-					<img src="midia/drink-1.jpg" alt="main-product2">
+					<img src="../../public/assets/img/drink-1.jpg" alt="main-product2">
 					<div class="menu-text">
 						<div class="menu-left">
 							<h4>Água com Gás do Luffy</h4>
@@ -264,7 +264,7 @@
 				</div>
 	
 				<div class="row">
-					<img src="midia/drink-3.jpg" alt="main-product3">
+					<img src="../../public/assets/img/drink-3.jpg" alt="main-product3">
 					<div class="menu-text">
 						<div class="menu-left">
 							<h4>Água com Gás da Nami</h4>
@@ -277,7 +277,7 @@
 				</div>
 	
 				<div class="row">
-					<img src="midia/drink-4.jpg" alt="main-product4">
+					<img src="../../public/assets/img//drink-4.jpg" alt="main-product4">
 					<div class="menu-text">
 						<div class="menu-left">
 							<h4>Fanta Laranja do Luffy</h4>

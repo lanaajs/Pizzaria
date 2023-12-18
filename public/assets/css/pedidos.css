@@ -31,6 +31,10 @@ body {
 	background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #0E2F1E 10px), repeating-linear-gradient(#0E2F1E, #113622);
 }
 
+.hidden{
+	display: none;
+}
+
 header {
 	position: fixed;
 	width: 100%;

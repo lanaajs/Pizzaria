@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/cadastro.css">
+    <link rel="stylesheet" href="../../public/assets/css/cadastro.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">  
     <link rel="shortcut icon" href="midia/20.png" type="image/x-icon">
-    <script src="js/cadastro.js"></script>
+    <script src="../../public/assets/js/cadastro.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
     <title>One Pizza</title>
@@ -15,7 +15,7 @@
 <body onload="senhaTAM()">
 
     <a href="home.html"><div id="logo">
-        <img src="midia/20.png" alt="Logo">
+        <img src="../../public/assets/img/20.png" alt="Logo">
     </div></a>
 
     <div class="tudo">
@@ -121,6 +121,6 @@
             </form>
         </div>
     </div>
-    <script src="js/cep.js" type='module' defer></script>
+    <script src="../../public/assets/js/cep.js" type='module' defer></script>
 </body>
 </html>

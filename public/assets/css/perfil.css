@@ -1,0 +1,150 @@
+*{
+    font-family: 'Raleway', sans-serif;
+	text-decoration: none;
+	list-style: none;
+	scroll-behavior: smooth;
+}
+
+:root {
+    --text-color: #ffffff;
+    --main-color: #F6DFC4;
+    --second-color: #dfdfdf;
+    --third-color: #DB131E;
+}
+
+body {
+    margin-top: 20px;
+    background: var(--bg-color);
+    color: var(--text-color);
+    background-color: #0E2F1E;
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #0E2F1E 10px), repeating-linear-gradient(#0E2F1E, #113622);
+    color: #69707a;
+}
+
+div {
+    color: #fff;
+}
+
+input {
+    color: #F6DFC4;
+}
+
+.nav-link {
+    color: #fff;
+    position: relative;
+}
+
+.nav-link::after {
+    content: " ";
+    width: 0%;
+    height: 4px;
+    background-color: #F6DFC4;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.4s ease-in;
+}
+
+.nav-link:hover {
+    color: #F6DFC4;
+    transition: 0.5s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.perfil-cont {
+    border-radius: 20px;
+    height: 100%;
+    background-color: rgba(34, 34, 34, 0.7);
+}
+
+.card-header1 {
+    color: #fff;
+    margin-top: 15px;
+    margin-left: 15px;
+    font-size: large;
+}
+
+.foto-perfil {
+    width: 35%;
+}
+
+button {
+    background-color: #F6DFC4;
+    margin-bottom: 5%;
+    width: 25%;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+button:hover {
+    opacity: 0.6;
+    transition: 0.5s;
+}
+
+.informacoes-pessoais {
+    margin-left: 5%;
+    background-color: rgba(34, 34, 34, 0.7);
+    height: 610px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card-header2 {
+    margin-left: 5%;
+    padding-top: 14px;
+    font-size: large;
+}
+
+.card-body {
+    height: 500px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-right: 5px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.form-control {
+    outline: none;
+    border: none;
+    background: transparent;
+    border: 2px solid rgba(246, 223, 196, 0.3);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #F6DFC4;
+}
+
+.form-control::placeholder {
+    color: #F6DFC4;
+}
+
+.form-control:focus {
+    border-color: #87d638;
+    box-shadow: 0 0 0 0.08rem rgba(135, 214, 56, 1);
+    background: transparent;
+    color: #F6DFC4;
+}
+
+.form-control:disabled{
+    opacity: 0.4;
+    background-color: transparent;
+}
+
+.card-header3 {
+
+    padding-top: 14px;
+    font-size: large;
+}
+
+.card-body-senha {
+    background-color: rgba(34, 34, 34, 0.7);
+    width: 840px;
+    border-radius: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: 6%;
+}

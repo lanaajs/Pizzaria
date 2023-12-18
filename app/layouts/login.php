@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="shortcut icon" href="midia/20.png" type="image/x-icon">    
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="../../public/assets/css/login.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">  
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 	<link rel="shortcut icon" href="midia/20.png" type="image/x-icon">
@@ -23,7 +23,7 @@
 <body>
 
     <header class="cabecalho">
-		<a href="#" class="logo"><img src="midia/logo.png" alt="logo"></a>
+		<a href="#" class="logo"><img src="../../public/assets/img/logo.png" alt="logo"></a>
 	
 		<div class="h-icons">
 			<a href="home.html"><i class='bx bx-home' ></i></a>
