@@ -56,7 +56,7 @@
 			<img src="" alt="">
 			<p>Temos tamanhos variados para atender ao tamanho da sua fome em todos os momentos.</p>
 		</div>
-		<form id="form" method="POST" action="">
+		<form id="form"  action="/pedidos" method="POST">
 			<div class="container-box">
 				<div class="c-mainbox">
 					<input type="radio" name="size" id="peq" value="Pequena" onclick="tamanho('Pequena')">
@@ -146,7 +146,7 @@
 				<option val="4.4">Pe Pero no Mi</option>
 			</select>
 			<div class="addcart">
-				<input type="hidden" id="selectedValue" name="selectedValue">
+				<input type="hidden" id="selectedValue" name="selectedValue" value="selectValue">
 				<input type="submit" class="btn" value="Adicionar ao Carrinho">
 			</div>
 		</div>
