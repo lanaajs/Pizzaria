@@ -59,22 +59,22 @@
 		<form id="form" method="POST" action="">
 			<div class="container-box">
 				<div class="c-mainbox">
-					<input type="radio" name="size" id="peq" onclick="tamanho('Pequena')">
+					<input type="radio" name="size" id="peq" value="Pequena" onclick="tamanho('Pequena')">
 					<label for="peq" class="lbl lbl1"><span>Pequena <br> 3</span></label>
 				</div>
 
 				<div class="c-mainbox">
-					<input type="radio" name="size" id="med" onclick="tamanho('Média')">
+					<input type="radio" name="size" id="med" value="Média"  onclick="tamanho('Média')">
 					<label for="med" class="lbl lbl2"><span>Média 6</span></label>
 				</div>
 
 				<div class="c-mainbox">
-					<input type="radio" name="size" id="gran" onclick="tamanho('Grande')">
+					<input type="radio" name="size" id="gran" value="Grande" onclick="tamanho('Grande')">
 					<label for="gran" class="lbl lbl3"><span>Grande <br> 9</span></label>
 				</div>
 
 				<div class="c-mainbox">
-					<input type="radio" name="size" id="fam" onclick="tamanho('Família')">
+					<input type="radio" name="size" id="fam" value="Família" onclick="tamanho('Família')">
 					<label for="fam" class="lbl lbl4"><span>Família <br> 12</span></label>
 				</div>
 			</div>
@@ -87,22 +87,22 @@
 
 			<div class="container-box second" id="sbradios">
 				<div class="c-mainbox" onclick="Select(1)">
-					<input type="radio" name="qtdsab" id="1sbr" class="1">
+					<input type="radio" name="qtdsab" value="1" id="1sbr" class="1">
 					<label for="peq" class="lbll lbl5"><span>1 Sabor</span></label>
 				</div>
 
 				<div class="c-mainbox" onclick="Select(2)">
-					<input type="radio" name="qtdsab" id="2sbr" class="2">
+					<input type="radio" name="qtdsab" value="2" id="2sbr" class="2">
 					<label for="med" class="lbll lbl6"><span>2 Sabores</span></label>
 				</div>
 
 				<div class="c-mainbox" onclick="Select(3)">
-					<input type="radio" name="qtdsab" id="3sbr" class="3">
+					<input type="radio" name="qtdsab" value="3" id="3sbr" class="3">
 					<label for="gran" class="lbll lbl7"><span>3 Sabores</span></label>
 				</div>
 
 				<div class="c-mainbox" onclick="Select(4)">
-					<input type="radio" name="qtdsab" id="4sbr" class="4">
+					<input type="radio" name="qtdsab" value="4" id="4sbr" class="4">
 					<label for="fam" class="lbll lbl8"><span>4 Sabores</span></label>
 				</div>
 			</div>
@@ -119,31 +119,31 @@
 			<h2>Escolha o <span> melhor sabor </span>para você:</span></h2>
 			<select class="sabores hidden" id="sabor1" onchange="atualizarImagem('sabor1')">
 				<option val="">Sabor 1</option>
-				<option val="1">Margue Rita No Mi</option>
-				<option val="2">Chee Se No Mi</option>
-				<option val="3">Veg Veg no Mi</option>
-				<option val="4">Pe Pero no Mi</option>
+				<option val="1.1">Margue Rita No Mi</option>
+				<option val="2.1">Chee Se No Mi</option>
+				<option val="3.1">Veg Veg no Mi</option>
+				<option val="4.1">Pe Pero no Mi</option>
 			</select>
 			<select class="sabores hidden" id="sabor2" onchange="atualizarImagem('sabor2')">
 				<option val="">Sabor 2</option>
-				<option val="1">Margue Rita No Mi</option>
-				<option val="2">Chee Se No Mi</option>
-				<option val="3">Veg Veg no Mi</option>
-				<option val="4">Pe Pero no Mi</option>
+				<option val="1.2">Margue Rita No Mi</option>
+				<option val="2.2">Chee Se No Mi</option>
+				<option val="3.2">Veg Veg no Mi</option>
+				<option val="4.2">Pe Pero no Mi</option>
 			</select>
 			<select class="sabores hidden" id="sabor3" onchange="atualizarImagem('sabor3')">
 				<option val="">Sabor 3</option>
-				<option val="1">Margue Rita No Mi</option>
-				<option val="2">Chee Se No Mi</option>
-				<option val="3">Veg Veg no Mi</option>
-				<option val="4">Pe Pero no Mi</option>
+				<option val="1.3">Margue Rita No Mi</option>
+				<option val="2.3">Chee Se No Mi</option>
+				<option val="3.3">Veg Veg no Mi</option>
+				<option val="4.3">Pe Pero no Mi</option>
 			</select>
 			<select class="sabores hidden" id="sabor4" onchange="atualizarImagem('sabor4')">
 				<option val="">Sabor 4</option>
-				<option val="1">Margue Rita No Mi</option>
-				<option val="2">Chee Se No Mi</option>
-				<option val="3">Veg Veg no Mi</option>
-				<option val="4">Pe Pero no Mi</option>
+				<option val="1.4">Margue Rita No Mi</option>
+				<option val="2.4">Chee Se No Mi</option>
+				<option val="3.4">Veg Veg no Mi</option>
+				<option val="4.4">Pe Pero no Mi</option>
 			</select>
 			<div class="addcart">
 				<input type="hidden" id="selectedValue" name="selectedValue">

@@ -481,6 +481,7 @@ header.sticky {
 		max-width: 500px;
 		width: 100%;
 	}
+
 }
 
 @media (max-height: 680px) {

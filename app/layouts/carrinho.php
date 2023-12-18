@@ -19,8 +19,21 @@
         <header>Carrinho<i class="btn-carrinho bx bx-cart"></i></header>
         <hr class="mt-3 mb-4">
         <div class="row" id="carrinhoSection">
-            <div class="itens-carrinho col-xl-8">
+            <div class="itens-carrinho-box col-xl-8">
                 <div class="card-header1">Itens</div>
+                <div class="itens-carrinho col-xl-12">
+                    <div class="box-img-produto">
+                        <img id="img-produto" src="../../public/assets/img/calabresa.jpg" alt="">
+                    </div>
+                    <div id="info-pedido">
+                        <h3>Pizza de Calabresa</h3>
+                        <button id="btn-excluir" type="button"><p>Excluir</p></button>
+                        <div id="valor-quantidade">
+                            <input type="number">
+                            <h3>R$ 45.00</h3>
+                        </div>
+                    </div>
+                </div>
                 <div class="mb-4 mb-xl-0">
                 </div>
             </div>

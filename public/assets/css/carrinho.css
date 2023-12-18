@@ -28,18 +28,81 @@ header{
     font-size: 35px;
 }
 
-.itens-carrinho{
+.itens-carrinho-box{
     border-radius: 20px;
     height: 500px;
     background-color: rgba(34, 34, 34, 0.7);
 }
 
+
+.itens-carrinho{
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    height: 150px;
+    background-color: rgba(60, 60, 60, 0.7);
+}
+
+#img-produto{
+    width: 150px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#info-pedido{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    justify-content: space-between;
+}
+
+#info-pedido h3{
+    margin-left: 20px;
+    width: 400px;
+}
+
+#btn-excluir{
+    margin-top: -15px;
+    margin-left: 20px;
+    background-color: #F6DFC4;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    font-size: small;
+}
+
+#btn-excluir p{
+    margin-top: -5px;
+}
+
+input[type=number]{
+    border-radius: 20px;
+    background-color: #F6DFC4;
+    width: 20%;
+    height: 25px;
+    text-align: center;
+    outline: none;
+}
+
+#valor-quantidade{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+#valor-quantidade h3{
+    margin-left: 60%;
+}
+
 .card-header1{
-    color: #F6DFC4;;
+    color: #F6DFC4;
     font-size: 35px;
     margin-top: 20px;
     margin-left: 5%;
-    border-bottom: 3px solid #F6DFC4;
+    border-bottom: 3px solid rgb(246, 223, 196);
     width: 80%;
 }
 

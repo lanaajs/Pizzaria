@@ -1,8 +1,6 @@
 CREATE DATABASE pizzaria;
 USE pizzaria;
 
-
-
 -- ------------------------------------- TABELA CADASTRO CLIENTES -------------------------------------------------------------------------- --
 CREATE TABLE tbCliente (
     id_Cliente INT AUTO_INCREMENT PRIMARY KEY,
@@ -23,7 +21,6 @@ CREATE TABLE tbCliente (
     numero_Cliente VARCHAR(5)
 );
 
-drop tab
 
 
 -- ------------------------------------- TABELA ENTREGADOR -------------------------------------------------------------------------- --
@@ -53,6 +50,37 @@ CREATE TABLE tbPizza (
     FOREIGN KEY (id_Sabor_FK) REFERENCES tbSabor(id_Sabor),
     tamanho ENUM('P', 'M', 'G')
 );
+
+-- ------------------------------------- TABELA Pizzas -------------------------------------------------------------------------- --
+CREATE TABLE tbPizzas(
+	id_produto INT AUTO_INCREMENT PRIMARY KEY,
+    nome_produto VARCHAR(50),
+    preco FLOAT,
+    imagem VARCHAR(200),
+    descricao VARCHAR(200)
+);
+INSERT INTO tbPizzas(nome_produto, preco, imagem, descricao) VALUE 
+("Margue Rita No Mi", "37.90", "marguerita.jpg", "Molho especial do Sanji, tomates frescos, queijo mussarela e manjericão."),
+("Chee see No Mi", "28.80", "queijo.jpg", "Molho especial do Sanji, queijo mussarela, queijo prato e queijo suíço"),
+("Veg Veg No Mi", "40.50", "vegetariana.jpg", "Molho especial do Sanji, queijo mussarela, tomate, azeitona, shimeji e manjericão."),
+("Pe Pero No Mi", "43.00", "calabresa.jpg", "Molho especial do Sanji, queijo mussarela, pepperoni italiano e azeite de oliva.");
+
+-- ------------------------------------- TABELA Drinks -------------------------------------------------------------------------- --
+
+
+CREATE TABLE tbDrinks(
+	id_produto INT AUTO_INCREMENT PRIMARY KEY,
+    nome_produto VARCHAR(50),
+    preco FLOAT,
+    imagem VARCHAR(200),
+    descricao VARCHAR(200)
+);
+INSERT INTO tbDrinks(nome_produto, preco, imagem, descricao) VALUE 
+("Chá Gelado do Zoro", "15.60", "drink-1.jpg", "Ultra chá gelado temático do Zoro sabor chá matte."),
+("Água com Gás do Luffy", "18.80", "drink-2.jpg", "Água com gás temática do Luffy com sabor de yogurt."),
+("Água com Gás da Nami", "10.50", "drink-3.jpg", "Água com gás temática da Nami com sabor de manga."),
+("Fanta Laranja do Luffy", "13.00", "drink-4.jpg", "A famosa Fanta Laranja com o rosto do nosso rei dos piratas.");
+
 
 -- ------------------------------------- TABELA CARTÂO -------------------------------------------------------------------------- --
 CREATE TABLE tbCartao (
