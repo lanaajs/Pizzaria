@@ -34,21 +34,22 @@
 
     <div id="universo">
         <section>
-            <form>
+            <form action="/login" method="POST">
                 <h1>Login</h1>
                 <div class="inputbox" id="inputemail">
                     <ion-icon name="mail-outline"></ion-icon>
-                    <input type="email" required id="email" autocomplete="off">
-                    <label for="">Email</label>
+                    <input type="email" required id="email" autocomplete="off" name="email_Cliente">
+                    <label for="email_Cliente">Email</label>
                 </div>
                 <div class="inputbox" id="inputsenha">
                     <ion-icon name="lock-closed-outline"></ion-icon>
-                    <input type="password" required id="senha">
-                    <label for="">Senha</label>
+                    <input type="password" required id="senha" name="senha_Cliente">
+                    <label for="senha_Cliente">Senha</label>
                 </div>
                 <div class="forget">
-                    <label for=""><input type="checkbox">Lembre de mim</label>
+                    <label for="check"><input type="checkbox" name="check">Lembre de mim</label>
                 </div>
+                <input type="hidden" name="logincli" value="logarcli"> 
                 <button onclick="verificar()">Entrar</button>
                 <div class="register">
                     <p>Não possui Login? <a href="cadastro.html">Clique aqui</a></p>

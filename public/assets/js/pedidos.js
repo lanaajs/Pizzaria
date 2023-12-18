@@ -1,42 +1,76 @@
-function Select(num) {
-    for (let i = 1; i <= 4; i++) {
-
-        const select = document.getElementById(sabor$, { i });
-        select.classList.toggle('hidden', i > num);
-
-        var quadrado1 = document.getElementById("sab1");
-        var quadrado2 = document.getElementById("sab2");
-        var quadrado3 = document.getElementById("sab3");
-        var quadrado4 = document.getElementById("sab4");
-
-        quadrado1.src = "midia/pizza calabresa 1-4.png";
-        quadrado2.src = "midia/pizza calabresa 4-4.png";
-        quadrado3.src = "midia/pizza calabresa 2-4.png";
-        quadrado4.src = "midia/pizza calabresa 3-4.png";
-
-
-        var select1 = document.getElementById('sabor1');
-        var select2 = document.getElementById('sabor2');
-        var select3 = document.getElementById('sabor3');
-        var select4 = document.getElementById('sabor4');
-
-        select1.value = "Sabor 1";
-        select2.value = "Sabor 2";
-        select3.value = "Sabor 3";
-        select4.value = "Sabor 4";
+function tamanho(tam){
+    var tamanho = tam;
+    //tam pode ser "Pequena", "Média", "Grande" ou "Família".
+    qtdSabores = 1;
+    if (tamanho === "Pequena") {
+      qtdSabores = 1;
+    } else if (tamanho === "Média") {
+      qtdSabores = 2;
+    } else if (tamanho === "Grande") {
+      qtdSabores = 2;
+    } else if (tamanho === "Família") {
+      qtdSabores = 4;
     }
+
+    var div1 = document.getElementById('titulo');
+    var div2 = document.getElementById('sbradios');
+    div1.style.display = 'block';
+    div2.style.display = 'flex';
+  
+    // Aplica as restrições de quantidade de sabores
+    Select(qtdSabores);
 }
 
-function atualizarImagem(idSabor) {
-    var selectElement = document.getElementById(idSabor); // pega o select selecionado
-    var saborEscolhido = selectElement.value; // pega o sabor selecionado no select
-    var radios = document.querySelectorAll('input[name="qtdsab"]:checked'); //seleciona todos os radios
 
+function Select(num) {
+    // Declare as variáveis fora do loop
+    const quadrado1 = document.getElementById("sab1");
+    const quadrado2 = document.getElementById("sab2");
+    const quadrado3 = document.getElementById("sab3");
+    const quadrado4 = document.getElementById("sab4");
+  
+    for (let i = 1; i <= 4; i++) {
+      const select = document.getElementById(`sabor${i}`);
+      select.classList.toggle('hidden', i > num);
+  
+      // Atualize as imagens de acordo com o sabor selecionado
+    }
+
+    if (qtdSabores === 1) {
+        // Desabilita as opções de 2 ou mais sabores
+        document.getElementById("1sbr").disabled = false;
+        document.getElementById("2sbr").disabled = true;
+        document.getElementById("3sbr").disabled = true;
+        document.getElementById("4sbr").disabled = true;
+      } else if (qtdSabores === 2) {
+        // Desabilita as opções de 3 ou 4 sabores
+        document.getElementById("1sbr").disabled = false;
+        document.getElementById("2sbr").disabled = false;
+        document.getElementById("3sbr").disabled = true;
+        document.getElementById("4sbr").disabled = true;
+      } else if (qtdSabores === 3) {
+        // Desabilita a opção de 4 sabores
+        document.getElementById("4sbr").disabled = true;
+      } else if(qtdSabores === 4){
+        document.getElementById("1sbr").disabled = false;
+        document.getElementById("2sbr").disabled = false;
+        document.getElementById("3sbr").disabled = false;
+        document.getElementById("4sbr").disabled = false;
+      }
+    
+  }
+
+
+function atualizarImagem(idSabor) {
+    var selectElement = document.getElementById(idSabor);
+    var saborEscolhido = selectElement.value;
+    var radios = document.querySelectorAll('input[name="qtdsab"]:checked');
+  
     var qtdSabores; //pega a quantidade de sabores selecionados
     radios.forEach(function (radio) {
-        if (radio.checked) {
-            qtdSabores = parseInt(radio.className); //pega a quantidade de sabores selecionados
-        }
+      if (radio.checked) {
+        qtdSabores = parseInt(radio.className); //pega a quantidade de sabores selecionados
+      }
     });
 
     //alert("Valor selecionado: " + qtdSabores);
@@ -53,17 +87,17 @@ function atualizarImagem(idSabor) {
                 quadrado2.src = "../../public/assets/img/pizza marguerita 4-4.png"; // Adicione a extensão .png
                 quadrado3.src = "../../public/assets/img/pizza marguerita 2-4.png"; // Adicione a extensão .png
                 quadrado4.src = "../../public/assets/img/pizza marguerita 3-4.png"; // Adicione a extensão .png
-            } else if (idSabor === "sabor1" && saborEscolhido === "Chee Se No Mi") {
+            }else if (idSabor === "sabor1" && saborEscolhido === "Chee Se No Mi") {
                 quadrado1.src = "../../public/assets/img/pizza queijo 1-4.png"; // Adicione a extensão .png
                 quadrado2.src = "../../public/assets/img/pizza queijo 4-4.png"; // Adicione a extensão .png
                 quadrado3.src = "../../public/assets/img/pizza queijo 2-4.png"; // Adicione a extensão .png
                 quadrado4.src = "../../public/assets/img/pizza queijo 3-4.png"; // Adicione a extensão .png
-            } else if (idSabor === "sabor1" && saborEscolhido === "Veg Veg no Mi") {
+            } else if (idSabor === "sabor1" && saborEscolhido === "Veg Veg no Mi"){
                 quadrado2.src = "../../public/assets/img/pizza vegetariana 4-4.png"; // Adicione a extensão .png
                 quadrado3.src = "../../public/assets/img/pizza vegetariana 2-4.png"; // Adicione a extensão .png
                 quadrado4.src = "../../public/assets/img/pizza vegetariana 3-4.png"; // Adicione a extensão .png
                 quadrado1.src = "../../public/assets/img/pizza vegetariana 1-4.png"; // Adicione a extensão .png
-            } else if (idSabor === "sabor1" && saborEscolhido === "Pe Pero no Mi") {
+            }else if (idSabor === "sabor1" && saborEscolhido === "Pe Pero no Mi"){
                 quadrado1.src = "../../public/assets/img/pizza calabresa 1-4.png"; // Adicione a extensão .png
                 quadrado2.src = "../../public/assets/img/pizza calabresa 4-4.png"; // Adicione a extensão .png
                 quadrado3.src = "../../public/assets/img/pizza calabresa 2-4.png"; // Adicione a extensão .png
@@ -74,27 +108,27 @@ function atualizarImagem(idSabor) {
             if (idSabor === "sabor1" && saborEscolhido === "Margue Rita No Mi") {
                 quadrado1.src = "../../public/assets/img/pizza marguerita 1-4.png"; // Adicione a extensão .png
                 quadrado3.src = "../../public/assets/img/pizza marguerita 2-4.png"; // Adicione a extensão .png
-            } else if (idSabor === "sabor1" && saborEscolhido === "Chee Se No Mi") {
+            }else if (idSabor === "sabor1" && saborEscolhido === "Chee Se No Mi") {
                 quadrado1.src = "../../public/assets/img/pizza queijo 1-4.png"; // Adicione a extensão .png
                 quadrado3.src = "../../public/assets/img/pizza queijo 2-4.png"; // Adicione a extensão .png
-            } else if (idSabor === "sabor1" && saborEscolhido === "Veg Veg no Mi") {
+            } else if (idSabor === "sabor1" && saborEscolhido === "Veg Veg no Mi"){
                 quadrado1.src = "../../public/assets/img/pizza vegetariana 1-4.png"; // Adicione a extensão .png
                 quadrado3.src = "../../public/assets/img/pizza vegetariana 2-4.png"; // Adicione a extensão .png
-            } else if (idSabor === "sabor1" && saborEscolhido === "Pe Pero no Mi") {
+            }else if (idSabor === "sabor1" && saborEscolhido === "Pe Pero no Mi"){
                 quadrado1.src = "../../public/assets/img/pizza calabresa 1-4.png"; // Adicione a extensão .png
                 quadrado3.src = "../../public/assets/img/pizza calabresa 2-4.png"; // Adicione a extensão .png
             }
 
-            if (idSabor === "sabor2" && saborEscolhido === "Margue Rita No Mi") {
+            if (idSabor === "sabor2" && saborEscolhido === "Margue Rita No Mi"){
                 quadrado2.src = "../../public/assets/img/pizza marguerita 4-4.png"; // Adicione a extensão .png
                 quadrado4.src = "../../public/assets/img/pizza marguerita 3-4.png"; // Adicione a extensão .png
-            } else if (idSabor === "sabor2" && saborEscolhido === "Chee Se No Mi") {
+            }else if (idSabor === "sabor2" && saborEscolhido === "Chee Se No Mi"){
                 quadrado2.src = "../../public/assets/img/pizza queijo 4-4.png"; // Adicione a extensão .png
                 quadrado4.src = "../../public/assets/img/pizza queijo 3-4.png"; // Adicione a extensão .png
-            } else if (idSabor === "sabor2" && saborEscolhido === "Veg Veg no Mi") {
+            } else if (idSabor === "sabor2" && saborEscolhido === "Veg Veg no Mi"){
                 quadrado2.src = "../../public/assets/img/pizza vegetariana 4-4.png"; // Adicione a extensão .png
                 quadrado4.src = "../../public/assets/img/pizza vegetariana 3-4.png"; // Adicione a extensão .png
-            } else if (idSabor === "sabor2" && saborEscolhido === "Pe Pero no Mi") {
+            } else if (idSabor === "sabor2" && saborEscolhido === "Pe Pero no Mi"){
                 quadrado2.src = "../../public/assets/img/pizza calabresa 4-4.png"; // Adicione a extensão .png
                 quadrado4.src = "../../public/assets/img/pizza calabresa 3-4.png"; // Adicione a extensão .png
             }
@@ -103,13 +137,13 @@ function atualizarImagem(idSabor) {
             if (idSabor === "sabor1" && saborEscolhido === "Margue Rita No Mi") {
                 quadrado1.src = "../../public/assets/img/pizza marguerita 1-4.png"; // Adicione a extensão .png
                 quadrado3.src = "../../public/assets/img/pizza marguerita 2-4.png"; // Adicione a extensão .png
-            } else if (idSabor === "sabor1" && saborEscolhido === "Chee Se No Mi") {
+            }else if (idSabor === "sabor1" && saborEscolhido === "Chee Se No Mi") {
                 quadrado1.src = "../../public/assets/img/pizza queijo 1-4.png"; // Adicione a extensão .png
                 quadrado3.src = "../../public/assets/img/pizza queijo 2-4.png"; // Adicione a extensão .png
-            } else if (idSabor === "sabor1" && saborEscolhido === "Veg Veg no Mi") {
+            } else if (idSabor === "sabor1" && saborEscolhido === "Veg Veg no Mi"){
                 quadrado1.src = "../../public/assets/img/pizza vegetariana 1-4.png"; // Adicione a extensão .png
                 quadrado3.src = "../../public/assets/img/pizza vegetariana 2-4.png"; // Adicione a extensão .png
-            } else if (idSabor === "sabor1" && saborEscolhido === "Pe Pero no Mi") {
+            }else if (idSabor === "sabor1" && saborEscolhido === "Pe Pero no Mi"){
                 quadrado1.src = "../../public/assets/img/pizza calabresa 1-4.png"; // Adicione a extensão .png
                 quadrado3.src = "../../public/assets/img/pizza calabresa 2-4.png"; // Adicione a extensão .png
             }
@@ -126,7 +160,7 @@ function atualizarImagem(idSabor) {
             else if (idSabor === "sabor2" && saborEscolhido === "Margue Rita No Mi") {
                 quadrado2.src = "../../public/assets/img/pizza marguerita 4-4.png";
             }
-
+            
             if (idSabor === "sabor3" && saborEscolhido === "Chee Se No Mi") {
                 quadrado4.src = "../../public/assets/img/pizza queijo 3-4.png";
             }
@@ -194,5 +228,13 @@ function atualizarImagem(idSabor) {
             }
             break;
     }
+
+    // if(valorSelecionado==1 && selectElement == "sabor1" && saborEscolhido == "Margue Rita No Mi"){
+
+    // }
 }
 
+
+
+//var imgElement = document.getElementById('sab' + idSabor.charAt(idSabor.length - 1));
+//imgElement.src = "midia/pizza " + selectedValue + ".png";

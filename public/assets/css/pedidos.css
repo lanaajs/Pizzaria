@@ -35,6 +35,14 @@ body {
 	display: none;
 }
 
+#titulo{
+	display: none;
+}
+
+#sbradios{
+	display: none;
+}
+
 header {
 	position: fixed;
 	width: 100%;
@@ -333,6 +341,7 @@ header.sticky {
 }
 
 .second {
+	
 	margin-top: 4rem;
 }
 

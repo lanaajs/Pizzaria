@@ -22,7 +22,7 @@ $dispatcher = FastRoute\simpleDispatcher(function (FastRoute\RouteCollector $r) 
     $r->addRoute('GET', '/', HomeController::class . '@index');
 
     $r->addRoute('GET', '/login', LoginController::class . '@indexLogin');
-    $r->addRoute('POST', '/login', LoginController::class . '@validarLoginCuid');
+    $r->addRoute('POST', '/login', LoginController::class . '@validarLoginCli');
 
     $r->addRoute('GET', '/pedidos/{id:[0-9]+}',PedidosController::class . '@indexPedidos');
     $r->addRoute('POST', '/pedidos/{id:[0-9]+}', PedidosController::class . '@enviarPedidos');

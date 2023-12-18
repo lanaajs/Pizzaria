@@ -59,50 +59,50 @@
 		<form id="form" method="POST" action="">
 			<div class="container-box">
 				<div class="c-mainbox">
-					<input type="radio" name="size" id="peq">
-					<label for="peq" class="lbl lbl1"><span>Pequena <br> 4</span></label>
+					<input type="radio" name="size" id="peq" onclick="tamanho('Pequena')">
+					<label for="peq" class="lbl lbl1"><span>Pequena <br> 3</span></label>
 				</div>
 
 				<div class="c-mainbox">
-					<input type="radio" name="size" id="med">
+					<input type="radio" name="size" id="med" onclick="tamanho('Média')">
 					<label for="med" class="lbl lbl2"><span>Média 6</span></label>
 				</div>
 
 				<div class="c-mainbox">
-					<input type="radio" name="size" id="gran">
-					<label for="gran" class="lbl lbl3"><span>Grande <br> 8</span></label>
+					<input type="radio" name="size" id="gran" onclick="tamanho('Grande')">
+					<label for="gran" class="lbl lbl3"><span>Grande <br> 9</span></label>
 				</div>
 
 				<div class="c-mainbox">
-					<input type="radio" name="size" id="fam">
+					<input type="radio" name="size" id="fam" onclick="tamanho('Família')">
 					<label for="fam" class="lbl lbl4"><span>Família <br> 12</span></label>
 				</div>
 			</div>
 
-			<div class="main-text text2">
+			<div class="main-text text2" id="titulo">
 				<h2>Escolha a <span>quantidade de sabores</span> deliciosos</h2>
 				<img src="" alt="">
 				<p>Temos tamanhos variados para atender ao tamanho da sua fome em todos os momentos.</p>
 			</div>
 
-			<div class="container-box second">
+			<div class="container-box second" id="sbradios">
 				<div class="c-mainbox" onclick="Select(1)">
-					<input type="radio" name="qtdsab" id="peq" class="1">
+					<input type="radio" name="qtdsab" id="1sbr" class="1">
 					<label for="peq" class="lbll lbl5"><span>1 Sabor</span></label>
 				</div>
 
 				<div class="c-mainbox" onclick="Select(2)">
-					<input type="radio" name="qtdsab" id="med" class="2">
+					<input type="radio" name="qtdsab" id="2sbr" class="2">
 					<label for="med" class="lbll lbl6"><span>2 Sabores</span></label>
 				</div>
 
 				<div class="c-mainbox" onclick="Select(3)">
-					<input type="radio" name="qtdsab" id="gran" class="3">
+					<input type="radio" name="qtdsab" id="3sbr" class="3">
 					<label for="gran" class="lbll lbl7"><span>3 Sabores</span></label>
 				</div>
 
 				<div class="c-mainbox" onclick="Select(4)">
-					<input type="radio" name="qtdsab" id="fam" class="4">
+					<input type="radio" name="qtdsab" id="4sbr" class="4">
 					<label for="fam" class="lbll lbl8"><span>4 Sabores</span></label>
 				</div>
 			</div>
