@@ -15,7 +15,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap"
 		rel="stylesheet">
-	<script src="../../public/assets/js/pedidos.js"></script>
+
 
 </head>
 
@@ -112,7 +112,7 @@
 			<div class="sabor sabor1"><img id="sab1" src="../../public/assets/img/pizza vegetariana 1-4.png" alt=""></div>
 			<div class="sabor sabor2"><img id="sab2" src="../../public/assets/img/pizza calabresa 4-4.png" alt=""></div>
 			<div class="sabor sabor3"><img id="sab3" src="../../public/assets/img/pizza queijo 2-4.png" alt=""></div>
-			<div class="sabor sabor4"><img id="sab4" src="../../public/assets/img/pizza vegetariana 3-4.png" alt=""></div>
+			<div class="sabor sabor4"><img id="sab4" src="../../public/assets/img/pizza marguerita 3-4.png" alt=""></div>
 		</div>
 
 		<div class="about-text">
@@ -291,7 +291,8 @@
 
 	<!-- custom js link -->
 	<script type="text/javascript" src="../../public/assets/js/home.js"></script>
-
+	<script src="../../public/assets/js/pedidos.js"></script>
+	<script src="../../public/assets/js/teste.js"></script>
 </body>
 
 </html>

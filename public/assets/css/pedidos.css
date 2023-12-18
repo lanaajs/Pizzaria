@@ -54,10 +54,6 @@ a {
 	color: white;
 }
 
-input[type="radio"] {
-	display: none;
-}
-
 .lbl {
 	background-color: #555555;
 	display: flex;
