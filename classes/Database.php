@@ -44,7 +44,7 @@ class Database
         $this->ligacao->rollBack();
     }
 
-    public function select($sql, $parametros = null)
+    public function select($sql, $parametros)
     {
 
         if (!preg_match("/^SELECT/i", $sql)) { //checa se a instrução passada é um SELECT

@@ -3,7 +3,7 @@
         'name' => 'onepizza/onepizza',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '73d57d70acd5d010cc61bf418d52a0c7a8a3d76a',
+        'reference' => 'b77c2da429ef5e7b038cd6bf7c72a4ff88b03474',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -22,7 +22,7 @@
         'onepizza/onepizza' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '73d57d70acd5d010cc61bf418d52a0c7a8a3d76a',
+            'reference' => 'b77c2da429ef5e7b038cd6bf7c72a4ff88b03474',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

@@ -13,8 +13,7 @@
 	<link rel="shortcut icon" href="midia/20.png" type="image/x-icon">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap"
-		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 
 
 </head>
@@ -56,7 +55,7 @@
 			<img src="" alt="">
 			<p>Temos tamanhos variados para atender ao tamanho da sua fome em todos os momentos.</p>
 		</div>
-		<form id="form"  action="/pedidos" method="POST">
+		<form id="form" action="/pedidos" method="POST">
 			<div class="container-box">
 				<div class="c-mainbox">
 					<input type="radio" name="size" id="peq" value="Pequena" onclick="tamanho('Pequena')">
@@ -64,7 +63,7 @@
 				</div>
 
 				<div class="c-mainbox">
-					<input type="radio" name="size" id="med" value="Média"  onclick="tamanho('Média')">
+					<input type="radio" name="size" id="med" value="Média" onclick="tamanho('Média')">
 					<label for="med" class="lbl lbl2"><span>Média 6</span></label>
 				</div>
 
@@ -117,28 +116,28 @@
 
 		<div class="about-text">
 			<h2>Escolha o <span> melhor sabor </span>para você:</span></h2>
-			<select class="sabores hidden" id="sabor1" onchange="atualizarImagem('sabor1')">
+			<select class="sabores hidden" id="sabor1" name="sabor1" onchange="atualizarImagem('sabor1')">
 				<option val="">Sabor 1</option>
 				<option val="1.1">Margue Rita No Mi</option>
 				<option val="2.1">Chee Se No Mi</option>
 				<option val="3.1">Veg Veg no Mi</option>
 				<option val="4.1">Pe Pero no Mi</option>
 			</select>
-			<select class="sabores hidden" id="sabor2" onchange="atualizarImagem('sabor2')">
+			<select class="sabores hidden" id="sabor2" name="sabor2" onchange="atualizarImagem('sabor2')">
 				<option val="">Sabor 2</option>
 				<option val="1.2">Margue Rita No Mi</option>
 				<option val="2.2">Chee Se No Mi</option>
 				<option val="3.2">Veg Veg no Mi</option>
 				<option val="4.2">Pe Pero no Mi</option>
 			</select>
-			<select class="sabores hidden" id="sabor3" onchange="atualizarImagem('sabor3')">
+			<select class="sabores hidden" id="sabor3" name="sabor3" onchange="atualizarImagem('sabor3')">
 				<option val="">Sabor 3</option>
 				<option val="1.3">Margue Rita No Mi</option>
 				<option val="2.3">Chee Se No Mi</option>
 				<option val="3.3">Veg Veg no Mi</option>
 				<option val="4.3">Pe Pero no Mi</option>
 			</select>
-			<select class="sabores hidden" id="sabor4" onchange="atualizarImagem('sabor4')">
+			<select class="sabores hidden" id="sabor4" name="sabor4" onchange="atualizarImagem('sabor4')">
 				<option val="">Sabor 4</option>
 				<option val="1.4">Margue Rita No Mi</option>
 				<option val="2.4">Chee Se No Mi</option>
