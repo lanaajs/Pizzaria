@@ -4,7 +4,7 @@ namespace app\controllers;
 
 class CarrinhoController
 {
-    function indexCarrinho(int $id){
+    function indexCarrinho(){
         require 'app/layouts/carrinho.php';
     }
 }

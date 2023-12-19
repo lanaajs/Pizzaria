@@ -145,6 +145,8 @@
 				<option val="4.4">Pe Pero no Mi</option>
 			</select>
 			<div class="addcart">
+
+				<h4>R$ 00,00</h4>
 				<input type="hidden" id="selectedValue" name="selectedValue" value="selectValue">
 				<input type="submit" class="btn" value="Adicionar ao Carrinho">
 			</div>
@@ -170,7 +172,7 @@
 				<img src="../../public/assets/img/drink-2.jpg" alt="main-product2">
 				<div class="menu-text">
 					<div class="menu-left">
-						<h4>Chá Gelado do <br> Zoro</h4>
+						<h4>Chá Gelado do Zoro</h4>
 					</div>
 					<div class="menu-right">
 						<h5>R$15.60</h5>

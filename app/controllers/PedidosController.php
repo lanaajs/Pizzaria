@@ -142,7 +142,7 @@ class PedidosController
             if (is_null($resultadoPedido)) {
                 $db->confirmarTransacao();
                 $db->desligar();
-                header('Location: /carrinho/');
+                header('Location: /carrinho');
             } else {
                 $db->cancelarTransacao();
                 $db->desligar();
